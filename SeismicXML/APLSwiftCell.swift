@@ -25,8 +25,6 @@ class APLSwiftCell: UITableViewCell {
         return temporaryFormat
     }()
 
-    
-    
     func configureWithEarthquake(earthquake :APLEarthquake){
         
         var tempEarthquakeDate :String = self.dateFormatter.stringFromDate(earthquake.date)

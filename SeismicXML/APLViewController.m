@@ -49,7 +49,9 @@
 #import "APLParseOperation.h"
 
 #import "APLEarthquake.h"
-#import "APLEarthquakeTableViewCell.h"
+
+#import "SeismicXML-Swift.h"
+//#import "APLEarthquakeTableViewCell.h"
 
 // this framework is imported so we can use the kCFURLErrorNotConnectedToInternet error code
 #import <CFNetwork/CFNetwork.h>
@@ -227,7 +229,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
 	static NSString *kEarthquakeCellID = @"EarthquakeCellID";
-  	APLEarthquakeTableViewCell *cell = (APLEarthquakeTableViewCell *)[tableView dequeueReusableCellWithIdentifier:kEarthquakeCellID];
+  	APLSwiftCell *cell = (APLSwiftCell *)[tableView dequeueReusableCellWithIdentifier:kEarthquakeCellID];
 
     // Get the specific earthquake for this row.
 	APLEarthquake *earthquake = (self.earthquakeList)[indexPath.row];
