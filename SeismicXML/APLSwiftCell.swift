@@ -26,12 +26,10 @@ class APLSwiftCell: UITableViewCell {
     }()
 
     func configureWithEarthquake(earthquake :APLEarthquake){
-        
         var tempEarthquakeDate :String = self.dateFormatter.stringFromDate(earthquake.date)
-        
         self.locationLabel.text = earthquake.location
         self.dateLabel.text = tempEarthquakeDate
-        self.magnitudeLabel.text = NSString(format: "%.1f", earthquake.magnitude)
+        self.magnitudeLabel.text = String(format: "%.1f", Float(earthquake.magnitude))
         self.magnitudeImage.image = imageForMagnitude(earthquake.magnitude)
     }
     
@@ -51,22 +49,4 @@ class APLSwiftCell: UITableViewCell {
         }
         return UIImage()
     }
-    
-    
-    
-    
-    /*
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    */
-    
-    /*
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    */
 }
