@@ -8,7 +8,29 @@
 
 import UIKit
 
+
 class APLSwiftCell: UITableViewCell {
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var magnitudeLabel: UILabel!
+    @IBOutlet weak var magnitudeImage: UILabel!
+    
+    let dateFormatter : NSDateFormatter!
+    
+    func configureWithEarthquake(earthquake :APLEarthquake){
+        self.locationLabel.text = earthquake.location
+        self.dateLabel.text = "/(self.dateFormatter.stringFromDate(arthquake.date))"
+        self.magnitudeLabel.text = "/(earthquake.magnitude)"
+        //self.magnitudeImage.text =
+    }
+    /*
+    func imageForMagnitude(magnitude: CGFloat) -> UIImage{
+        switch
+        
+    }
+    */
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
