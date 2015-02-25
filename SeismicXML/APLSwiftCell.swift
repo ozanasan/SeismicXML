@@ -26,10 +26,15 @@ class APLSwiftCell: UITableViewCell {
     }()
 
     func configureWithEarthquake(earthquake :APLEarthquake){
+        
+        let numberFormat = NSNumberFormatter()
+        numberFormat.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        numberFormat.maximumFractionDigits = 1
+        
         var tempEarthquakeDate :String = self.dateFormatter.stringFromDate(earthquake.date)
         self.locationLabel.text = earthquake.location
         self.dateLabel.text = tempEarthquakeDate
-        self.magnitudeLabel.text = String(format: "%.1f", Float(earthquake.magnitude))
+        self.magnitudeLabel.text = numberFormat.stringFromNumber(earthquake.magnitude)
         self.magnitudeImage.image = imageForMagnitude(earthquake.magnitude)
     }
     
