@@ -40,18 +40,17 @@ class APLSwiftCell: UITableViewCell {
     
     func imageForMagnitude(magnitude: CGFloat) -> UIImage{
         
-        if(magnitude >= 5.0){
-            return UIImage(named:"5.0.png")!
+        switch magnitude {
+            case 5...1000:
+                return UIImage(named:"5.0.png")!
+            case 4...5:
+                return UIImage(named:"4.0.png")!
+            case 3...4:
+                return UIImage(named:"3.0.png")!
+            case 2...3:
+                return UIImage(named:"2.0.png")!
+            default:
+                return UIImage(named:"default-magnitude.png")!
         }
-        else if(magnitude >= 4.0){
-            return UIImage(named:"4.0.png")!
-        }
-        else if(magnitude >= 3.0){
-            return UIImage(named:"3.0.png")!
-        }
-        else if(magnitude >= 2.0){
-            return UIImage(named:"2.0.png")!
-        }
-        return UIImage()
     }
 }

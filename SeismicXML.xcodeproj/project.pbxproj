@@ -26,6 +26,7 @@
 		28FB23A61715BFCF0000C69F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FB23A51715BFCF0000C69F /* Default-568h@2x.png */; };
 		28FB23A91715BFCF0000C69F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FB23A71715BFCF0000C69F /* MainStoryboard.storyboard */; };
 		28FB23AC1715BFCF0000C69F /* APLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FB23AB1715BFCF0000C69F /* APLViewController.m */; };
+		E74D96C41A9F4AFB00AA209C /* default-magnitude.png in Resources */ = {isa = PBXBuildFile; fileRef = E74D96C31A9F4AFB00AA209C /* default-magnitude.png */; };
 		E7CE304B1A988F6B004E7ECF /* APLSwiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE304A1A988F6B004E7ECF /* APLSwiftCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		28FB23A81715BFCF0000C69F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		28FB23AA1715BFCF0000C69F /* APLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLViewController.h; sourceTree = "<group>"; };
 		28FB23AB1715BFCF0000C69F /* APLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLViewController.m; sourceTree = "<group>"; };
+		E74D96C31A9F4AFB00AA209C /* default-magnitude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default-magnitude.png"; path = "Images/default-magnitude.png"; sourceTree = "<group>"; };
 		E7CE30471A988E5D004E7ECF /* SeismicXML-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeismicXML-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7CE304A1A988F6B004E7ECF /* APLSwiftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLSwiftCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		285A04EF1715C9670075E47F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E74D96C31A9F4AFB00AA209C /* default-magnitude.png */,
 				285A04E71715C9610075E47F /* 2.0.png */,
 				285A04E81715C9610075E47F /* 3.0.png */,
 				285A04E91715C9610075E47F /* 4.0.png */,
@@ -213,6 +216,7 @@
 				285A04EB1715C9610075E47F /* 2.0.png in Resources */,
 				285A04EC1715C9610075E47F /* 3.0.png in Resources */,
 				285A04ED1715C9610075E47F /* 4.0.png in Resources */,
+				E74D96C41A9F4AFB00AA209C /* default-magnitude.png in Resources */,
 				285A04EE1715C9610075E47F /* 5.0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
